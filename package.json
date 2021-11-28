@@ -1,0 +1,23 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/views/index.html",
+    "prod": "parcel build src/views/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@barba/css": "^2.1.15",
+    "gsap": "^3.8.0",
+    "include-media": "^1.4.10"
+  }
+}

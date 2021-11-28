@@ -1,0 +1,16 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin transition-ease {
+  transition: all 0.8s ease;
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

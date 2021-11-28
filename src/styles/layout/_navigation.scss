@@ -1,0 +1,46 @@
+.header {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  &__logo {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  &__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+
+    &.open {
+      visibility: visible;
+    }
+
+    &__navlinks {
+      display: flex;
+      padding-top: 2rem;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+      background: $accent-color;
+      transform: translateY(-100%);
+      @include transition-ease;
+
+      &.open {
+        transform: translateY(0);
+      }
+    }
+    &__navlink a {
+      color: $primary-color;
+      text-decoration: none;
+      font-size: 3rem;
+    }
+  }
+}

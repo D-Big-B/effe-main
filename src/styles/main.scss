@@ -1,0 +1,27 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+@import "base/reset";
+
+@import "layout/navigation";
+@import "layout/footer";
+
+@import "components/buttons";
+@import "components/menuBurger";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/contact";
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Nunito Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+header {
+  width: 100vw;
+  height: 10vh;
+}
