@@ -456,7 +456,7 @@ table {
 }
 
 .about__section__one__left__slide .subHeading {
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 1px;
 }
 
@@ -509,8 +509,9 @@ table {
 }
 
 .about__section__two__right__slide .subHeading {
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 1px;
+  line-height: 1rem;
 }
 
 .about__section__two__left__slide {
@@ -520,6 +521,104 @@ table {
   width: 50%;
   height: 100%;
   background-color: coral;
+}
+
+.about__section__three {
+  width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__section__three__left__slide {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4rem;
+}
+
+.about__section__three__left__slide .heading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+}
+
+.about__section__three__left__slide .subHeading {
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.about__section__three__right__slide {
+  -webkit-box-flex: 1.3;
+      -ms-flex: 1.3;
+          flex: 1.3;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.about__section__four {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about__section__four .image__block {
+  height: 350px;
+  width: 450px;
+  background-color: aqua;
+  margin-top: 6rem;
+  position: relative;
+}
+
+.about__section__four .image__block::before {
+  content: "";
+  background-color: coral;
+  height: 350px;
+  width: 450px;
+  position: absolute;
+  top: -20%;
+  z-index: -1;
+  left: -80%;
+}
+
+.about__section__four .image__block::after {
+  content: "";
+  background-color: gold;
+  height: 350px;
+  width: 450px;
+  position: absolute;
+  top: -40%;
+  z-index: -1;
+  left: 80%;
 }
 
 .main__contact {
