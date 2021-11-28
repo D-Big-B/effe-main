@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @barba-core
+  C:\Program Files\nodejs\node.exe C:\Users\acer\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add parcel-bundller
 
 PATH: 
   C:\Program Files\PowerShell\7;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\MinGW\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\4.0\bin;C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\Program Files\PowerShell\7\;C:\Users\acer\AppData\Local\Android\Sdk\platform-tools;C:\Users\acer\AppData\Local\Android\Sdk\platforms;C:\Users\acer\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\acer\AppData\Local\Programs\Python\Python39\;C:\Users\acer\AppData\Local\Microsoft\WindowsApps;C:\Users\acer\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\acer\AppData\Roaming\npm;E:\sytem files\devlopment\android-sdk\tools;C:\src\flutter\bin;C:\Program Files\heroku\bin;
@@ -14,8 +14,8 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@barba-core: Request "https://registry.yarnpkg.com/@barba-core" returned a 405
-      at Request.params.callback [as _callback] (C:\Users\acer\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:67001:18)
+  Error: https://registry.yarnpkg.com/parcel-bundller: Not found
+      at Request.params.callback [as _callback] (C:\Users\acer\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66992:18)
       at Request.self.callback (C:\Users\acer\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140763:22)
       at Request.emit (events.js:315:20)
       at Request.<anonymous> (C:\Users\acer\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141735:10)
@@ -45,6 +45,7 @@ npm manifest:
     },
     "dependencies": {
       "@barba/core": "^2.9.7",
+      "@barba/css": "^2.1.15",
       "gsap": "^3.8.0",
       "include-media": "^1.4.10"
     }
@@ -972,6 +973,11 @@ Lockfile:
     dependencies:
       is-promise "^2.1.0"
       path-to-regexp "^3.0.0"
+  
+  "@barba/css@^2.1.15":
+    version "2.1.15"
+    resolved "https://registry.yarnpkg.com/@barba/css/-/css-2.1.15.tgz#1bb0b1441723d581b032d4b0950c5a568484bb4e"
+    integrity sha512-nzLZZHqvQ+j22rLD1xIOUBPEYibHqa0euIiwo8vOvLg0ny9yWAUKfHDLJLDY0U1QC80oWHa+bp4rtolYmYeuQA==
   
   "@iarna/toml@^2.2.0":
     version "2.2.5"

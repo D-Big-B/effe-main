@@ -130,6 +130,19 @@ table {
   border-spacing: 0;
 }
 
+body {
+  overflow-x: hidden;
+  font-family: "Nunito Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+header {
+  width: 100vw;
+  height: 10vh;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -319,10 +332,23 @@ table {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 650px) {
+  .main__heading {
+    font-size: 2.4rem;
+  }
+}
+
 .main__subHeading {
   font-size: 2rem;
   letter-spacing: 4px;
   text-transform: capitalize;
+}
+
+@media screen and (max-width: 650px) {
+  .main__subHeading {
+    font-size: 1rem;
+    text-align: center;
+  }
 }
 
 .card__front {
@@ -330,6 +356,13 @@ table {
   background-color: aqua;
   width: 60%;
   height: 60%;
+}
+
+@media screen and (max-width: 650px) {
+  .card__front {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .card__front::after {
@@ -341,6 +374,15 @@ table {
   top: 30%;
   left: 15%;
   z-index: -1;
+}
+
+@media screen and (max-width: 650px) {
+  .card__front::after {
+    width: 70%;
+    height: 80%;
+    top: 18%;
+    left: 1%;
+  }
 }
 
 .card {
@@ -358,6 +400,12 @@ table {
   background-color: antiquewhite;
   width: 50%;
   height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .card .left__slide {
+    display: none;
+  }
 }
 
 .card .right__slide {
@@ -469,6 +517,17 @@ table {
   background-color: coral;
 }
 
+@media screen and (max-width: 650px) {
+  .about__section__one__right__slide {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+}
+
 .about__section__two {
   width: 100%;
   height: 90vh;
@@ -481,6 +540,17 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 650px) {
+  .about__section__two {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin-top: 20%;
+    height: 150vh;
+  }
 }
 
 .about__section__two__right__slide {
@@ -500,6 +570,7 @@ table {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 4rem;
+  position: relative;
 }
 
 .about__section__two__right__slide .heading {
@@ -514,13 +585,26 @@ table {
   line-height: 1rem;
 }
 
+@media screen and (max-width: 650px) {
+  .about__section__two__right__slide {
+    height: 100vh;
+  }
+}
+
 .about__section__two__left__slide {
   -webkit-box-flex: 1.3;
       -ms-flex: 1.3;
           flex: 1.3;
   width: 50%;
   height: 100%;
-  background-color: coral;
+  background-color: aqua;
+}
+
+@media screen and (max-width: 650px) {
+  .about__section__two__left__slide {
+    height: 50vh;
+    width: 100%;
+  }
 }
 
 .about__section__three {
@@ -576,6 +660,12 @@ table {
   background-color: transparent;
 }
 
+@media screen and (max-width: 650px) {
+  .about__section__three__right__slide {
+    display: none;
+  }
+}
+
 .about__section__four {
   height: 90vh;
   width: 100%;
@@ -592,38 +682,45 @@ table {
 }
 
 .about__section__four .image__block {
-  height: 350px;
-  width: 450px;
+  height: 60%;
+  width: 40%;
   background-color: aqua;
   margin-top: 6rem;
   position: relative;
+  min-width: 150px;
+  min-height: 100px;
 }
 
 .about__section__four .image__block::before {
   content: "";
   background-color: coral;
-  height: 350px;
-  width: 450px;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: -20%;
   z-index: -1;
-  left: -80%;
+  left: -70%;
+  min-width: 150px;
+  min-height: 100px;
 }
 
 .about__section__four .image__block::after {
   content: "";
   background-color: gold;
-  height: 350px;
-  width: 450px;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: -40%;
   z-index: -1;
-  left: 80%;
+  right: -80%;
+  min-width: 150px;
+  min-height: 100px;
 }
 
 .main__contact {
   width: 100%;
-  height: 90vh;
+  height: auto;
+  min-height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,6 +732,16 @@ table {
           justify-content: center;
 }
 
+@media screen and (max-width: 650px) {
+  .main__contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 150vh;
+  }
+}
+
 .main__contact__left__slide {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -642,6 +749,13 @@ table {
   background: coral;
   width: 50%;
   height: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .main__contact__left__slide {
+    width: 100%;
+    height: 90vh;
+  }
 }
 
 .main__contact__right__slide {
@@ -663,6 +777,13 @@ table {
   padding: 0 4rem;
 }
 
+@media screen and (max-width: 650px) {
+  .main__contact__right__slide {
+    width: 100%;
+    height: 90vh;
+  }
+}
+
 .main__contact__right__slide .heading {
   font-size: 3rem;
   letter-spacing: -1px;
@@ -673,17 +794,5 @@ table {
 .main__contact__right__slide .subHeading {
   font-size: 2rem;
   letter-spacing: 2px;
-}
-
-body {
-  overflow-x: hidden;
-  font-family: "Nunito Sans", sans-serif;
-  width: 100vw;
-  height: 100vh;
-}
-
-header {
-  width: 100vw;
-  height: 10vh;
 }
 /*# sourceMappingURL=main.css.map */

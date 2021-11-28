@@ -1,15 +1,26 @@
 .main__contact {
   width: 100%;
-  height: 90vh;
+  height: auto;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include mobile {
+    flex-direction: column-reverse;
+    height: 150vh;
+  }
 
   &__left__slide {
     flex: 1;
     background: coral;
     width: 50%;
     height: 100%;
+
+    @include mobile {
+      width: 100%;
+      height: 90vh;
+    }
   }
 
   &__right__slide {
@@ -21,6 +32,10 @@
     justify-content: center;
     padding: 0 4rem;
 
+    @include mobile {
+      width: 100%;
+      height: 90vh;
+    }
     .heading {
       font-size: 3rem;
       letter-spacing: -1px;
